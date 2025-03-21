@@ -125,9 +125,14 @@ form button:hover {
 form label {
     font-size: 1em;
     color: #1E1E2C;;
-    margin-bottom: 0.7em; /* Adds space between the label and input */
-    text-align: left; /* Ensures the label text is aligned to the left */
-    width: 100%; /* Ensures label takes full width */
-    max-width: 400px; /* Limits label width */
-    display: block; /* Makes the label a block element to allow left alignment */
+    margin-bottom: 0.7em; 
+    text-align: left; 
+    width: 100%; 
+    max-width: 400px; 
+    display: block; 
+}
+
+.image-content{
+
+ margin-left: 20px;
 }
