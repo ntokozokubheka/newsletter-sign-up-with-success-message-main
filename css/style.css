@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E2E3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.text-content p {
+    margin-bottom: 1em;
+    color: #6c6c6c;
+}
+
+.text-content ul {
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+.text-content ul li {
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 25px;
+}
+
+.text-content ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #ff5c5c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
