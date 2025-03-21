@@ -10,21 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color:  #1E1E2C; 
     height: 100vh;
-}
-
-.outer-container {
-    background-color: #1E1E2C; 
-    padding: 2em;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;  
-    height: 90vh; 
-    margin: 0 auto;
-    box-sizing: border-box; /
 }
 
 .newsletter-card {
