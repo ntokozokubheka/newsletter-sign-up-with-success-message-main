@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #2E2E3A;
     display: flex;
     justify-content: center;
@@ -64,7 +64,6 @@ body {
 }
 
 .text-content ul li {
-
     margin-bottom: 1em; 
     position: relative;
     padding-left: 25px; 
@@ -80,7 +79,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Ensures input and button are centered */
+    align-items: center; 
 }
 
 form input {
@@ -89,8 +88,13 @@ form input {
     border-radius: 5px;
     margin-bottom: 1em;
     font-size: 1em;
-    width: 100%; /* Full width input */
-    max-width: 400px; /* Maximum width of input */
+    width: 100%; 
+    max-width: 400px; 
+}
+
+form input.error {
+    border-color: #FF6B6B; 
+    background-color: #FFECEC; 
 }
 
 form button {
@@ -109,22 +113,9 @@ form button:hover {
     background-color: #555;
 }
 
-.image-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-content img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
 form label {
     font-size: 1em;
-    color: #1E1E2C;;
+    color: #1E1E2C;
     margin-bottom: 0.7em; 
     text-align: left; 
     width: 100%; 
@@ -132,7 +123,26 @@ form label {
     display: block; 
 }
 
-.image-content{
+.error-message {
+    color: #FF6B6B; 
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    display: none; 
+    width: 100%;
+    text-align: left;
+    max-width: 400px;
+}
 
- margin-left: 20px;
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
 }
