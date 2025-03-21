@@ -10,27 +10,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
     height: 100vh;
 }
 
-.container {
+.outer-container {
+    background-color: #1E1E2C; 
+    padding: 2em;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;  
+    height: 90vh; 
+    margin: 0 auto;
+    box-sizing: border-box; /
 }
 
 .newsletter-card {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #fff; 
     border-radius: 15px;
     padding: 2em;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    width: 100%;
+    width: 100%; 
+    max-width: 900px; 
+    margin: auto; 
+    box-sizing: border-box; 
 }
+
 
 .text-content {
     flex: 1;
@@ -58,7 +67,7 @@ body {
 }
 
 .text-content ul li::before {
-    content: '✔️';
+    content: '✔️'; 
     position: absolute;
     left: 0;
     color: #ff5c5c;
