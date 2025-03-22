@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Updated!</title>
-    <link rel="stylesheet" href="css/style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="outer-container"> 
+  <div class="outer-container">
     <div class="container">
+    
         <div class="newsletter-card">
             <div class="text-content">
                 <h1>Stay updated!</h1>
@@ -27,12 +28,25 @@
                 </form>
             </div>
             <div class="image-content">
-                <img src="assets/images/illustration-sign-up-desktop.svg" alt="Analytics Graphic"> <!-- Ensure correct image path -->
+                <img src="assets/images/illustration-sign-up-desktop.svg" alt="Analytics Graphic">
+            </div>
+        </div>
+
+    
+        <div class="success-container" style="display: none;">
+            <div class="success-card">
+                <div class="success-icon">
+                    <span>&#10003;</span>
+                </div>
+                <h1>Thanks for subscribing!</h1>
+                <p>A confirmation email has been sent to <strong>email@company.com</strong>. Please open it and click the button inside to confirm your subscription.</p>
+                <button onclick="dismissMessage()">Dismiss message</button>
             </div>
         </div>
     </div>
   </div>
 
-  <script src="js/script.js"></script> 
+  <!-- External JavaScript File -->
+  <script src="js/script.js"></script>
 </body>
 </html>
