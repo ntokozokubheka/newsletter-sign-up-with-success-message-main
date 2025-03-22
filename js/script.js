@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Function to dismiss the success message
+
 function dismissMessage() {
     document.querySelector('.success-container').style.display = 'none';
     document.querySelector('.newsletter-card').style.display = 'block';
