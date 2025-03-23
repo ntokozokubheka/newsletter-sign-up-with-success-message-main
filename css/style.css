@@ -54,13 +54,14 @@ body {
 .text-content ul li {
     margin-bottom: 1em; 
     position: relative;
-    padding-left: 30px; 
+    padding-left: 40px; 
+    
 }
 
 .text-content ul li::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 10px; /* Shift the bullet point to the left */
     top: 0.2em; 
     width: 20px; 
     height: 20px; 
