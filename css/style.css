@@ -100,7 +100,6 @@ form button {
     cursor: pointer;
     font-size: 1em;
     width: 100%;
-    max-width: 400px;
 }
 
 form button:hover {
@@ -179,6 +178,7 @@ form label {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    width: 100%;
 }
 
 .success-container button:hover {
@@ -209,28 +209,23 @@ form label {
     .success-card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin: auto 0%;
         width: 100%;
         height: 100vh;
     }
-
-    .success-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh; /* Ensure it's taking full height */
-        width: 100vw;
+    .success-icon{
+        padding-top: 40%;
     }
 
-    .success-container .success-icon,
-    .success-container h1,
-    .success-container p {
-        text-align: center;
+    .success h {
+        padding-top: 7%;
     }
-
+    
+    p {
+        padding-top: 7%;
+    }
+    
     .success-container button {
-        margin-top: auto; /* Pushes the button to the bottom */
+        margin-top: auto; 
     }
 }
