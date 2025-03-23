@@ -66,15 +66,21 @@ body {
 .text-content ul li {
     margin-bottom: 1em; 
     position: relative;
-    padding-left: 25px; 
+    padding-left: 30px; 
 }
 
 .text-content ul li::before {
-    content: '✔️'; 
+    content: '';
     position: absolute;
     left: 0;
-    color: #ff5c5c;
+    top: 0.2em; 
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/assets/images/icon-list.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
 }
+
 
 form {
     display: flex;
@@ -161,14 +167,8 @@ form label {
     padding: 3em;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left;
     max-width: 400px;
-}
-
-.success-container .success-icon {
-    font-size: 3em;
-    color: #FF6B6B;
-    margin-bottom: 1em;
 }
 
 .success-container h1 {
@@ -195,4 +195,10 @@ form label {
 
 .success-container button:hover {
     background-color: #555;
+}
+
+.success-icon img {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 1em; 
 }
