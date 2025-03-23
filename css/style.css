@@ -191,10 +191,9 @@ form label {
     margin-bottom: 1em; 
 }
 
-
 @media (max-width: 768px) {
     .newsletter-card {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
     }
 
     .image-content {
@@ -204,14 +203,34 @@ form label {
 
     .newsletter-card {
         width: 100%;
-        height: 100vh; 
-        
+        height: 100vh;
     }
 
-  .success-card{
-    width: 100%;
-    height: 100vh;
+    .success-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
 
- }
-  
+    .success-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh; /* Ensure it's taking full height */
+        width: 100vw;
+    }
+
+    .success-container .success-icon,
+    .success-container h1,
+    .success-container p {
+        text-align: center;
+    }
+
+    .success-container button {
+        margin-top: auto; /* Pushes the button to the bottom */
+    }
 }
