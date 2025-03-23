@@ -13,18 +13,6 @@ body {
     height: 100vh;
 }
 
-.outer-container {
-    background-color: #1E1E2C;
-    padding: 2em;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 90vh;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
 
 .newsletter-card {
     
@@ -201,4 +189,29 @@ form label {
     width: 50px; 
     height: 50px; 
     margin-bottom: 1em; 
+}
+
+
+@media (max-width: 768px) {
+    .newsletter-card {
+        flex-direction: column-reverse; 
+    }
+
+    .image-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .newsletter-card {
+        width: 100%;
+        height: 100vh; 
+        
+    }
+
+  .success-card{
+    width: 100%;
+    height: 100vh;
+
+ }
+  
 }

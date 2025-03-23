@@ -30,3 +30,16 @@ function dismissMessage() {
     document.querySelector('.newsletter-card').style.display = 'block';
     document.querySelector('.newsletter-card').style.display = 'flex';   
 }
+
+function updateImage() {
+    const image = document.getElementById('newsletter-image');
+    if (window.innerWidth <= 768) { 
+      image.src = 'assets/images/illustration-sign-up-desktop.svg'; 
+    } else {
+      image.src = 'assets/images/illustration-sign-up-desktop.svg'; 
+    }
+  }
+
+  window.onload = updateImage;
+
+  window.onresize = updateImage;
