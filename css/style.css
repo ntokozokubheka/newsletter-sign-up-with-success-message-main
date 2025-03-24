@@ -277,4 +277,21 @@ form label {
         padding: 0.6em; /* Reduce padding */
         font-size: 0.9em; /* Reduce button font size */
     }
+
+    .image-content {
+        flex-grow: 1; /* Allow the image content to grow and fill the available space */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Ensure the div takes the full width */
+        height: 100%; /* Ensure the div takes the full height */
+    }
+    
+    .image-content img {
+        width: 100%; /* Make the image fill the entire div width */
+        height: 100%; /* Make the image fill the entire div height */
+        object-fit: cover; /* Ensure the image covers the entire div without stretching */
+    
+    }
+    
 }
