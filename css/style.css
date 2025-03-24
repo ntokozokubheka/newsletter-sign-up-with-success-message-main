@@ -56,12 +56,12 @@ body {
 }
 
 .text-content ul li {
-    margin-bottom: 1em; font-size: 2.5em;
+    margin-bottom: 1em;
     position: relative;
     padding-left: 30px;
 }
 
-.text-content ul li::before { font-size: 2.5em;
+.text-content ul li::before {
     content: '';
     position: absolute;
     left: 0;
