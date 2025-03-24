@@ -34,7 +34,7 @@ function dismissMessage() {
 function updateImage() {
     const image = document.getElementById('newsletter-image');
     if (window.innerWidth <= 768) { 
-      image.src = 'assets/images/illustration-sign-up-desktop.svg'; 
+      image.src = 'assets/images/illustration-sign-up-mobile.svg'; 
     } else {
       image.src = 'assets/images/illustration-sign-up-desktop.svg'; 
     }

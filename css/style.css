@@ -11,11 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0; /* Remove body margin for full viewport coverage */
 }
 
 
 .newsletter-card {
-    
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -32,13 +32,14 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    text-align: center; 
+    justify-content: center;
+    text-align: left; /* Changed from center to left */
+    padding-right: 20px; /* Add spacing between text and image */
 }
 
 .text-content h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
+    font-size: 2.5em;
+    margin-bottom: 1.2em;
 }
 
 .text-content p {
@@ -49,31 +50,32 @@ body {
 .text-content ul {
     list-style: none;
     margin-bottom: 2em;
+    padding-left: 0; /* Remove default padding */
 }
 
 .text-content ul li {
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
     position: relative;
-    padding-left: 30px; 
+    padding-left: 30px;
 }
 
 .text-content ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0.2em; 
-    width: 20px; 
-    height: 20px; 
-    background-image: url('/assets/images/icon-list.svg'); 
-    background-size: contain; 
-    background-repeat: no-repeat; 
+    top: 0.2em;
+    width: 20px;
+    height: 20px;
+    background-image: url('/assets/images/icon-list.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: flex-start; /* Aligned left for form elements */
 }
 
 form input {
@@ -82,17 +84,17 @@ form input {
     border-radius: 5px;
     margin-bottom: 1em;
     font-size: 1em;
-    width: 100%; 
-    max-width: 400px; 
+    width: 100%;
+    max-width: 400px;
 }
 
 form input.error {
-    border-color: #FF6B6B; 
-    background-color: #FFECEC; 
+    border-color: #FF6B6B;
+    background-color: #FFECEC;
 }
 
 form button {
-    background-color: #333;
+    background-color: #1E1E2C;
     color: #fff;
     padding: 0.8em;
     border: none;
@@ -100,6 +102,7 @@ form button {
     cursor: pointer;
     font-size: 1em;
     width: 100%;
+    max-width: 400px;
 }
 
 form button:hover {
@@ -109,18 +112,18 @@ form button:hover {
 form label {
     font-size: 1em;
     color: #1E1E2C;
-    margin-bottom: 0.7em; 
-    text-align: left; 
-    width: 100%; 
-    max-width: 400px; 
-    display: block; 
+    margin-bottom: 0.7em;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    display: block;
 }
 
 .error-message {
-    color: #FF6B6B; 
+    color: #FF6B6B;
     font-size: 0.9em;
     margin-bottom: 1em;
-    display: none; 
+    display: none;
     width: 100%;
     text-align: left;
     max-width: 400px;
@@ -159,7 +162,7 @@ form label {
 }
 
 .success-container h1 {
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 1em;
     color: #333;
 }
@@ -171,7 +174,7 @@ form label {
 }
 
 .success-container button {
-    background-color: #333;
+    background-color: #1E1E2C;
     color: #fff;
     padding: 0.8em 2em;
     border: none;
@@ -186,46 +189,92 @@ form label {
 }
 
 .success-icon img {
-    width: 50px; 
-    height: 50px; 
-    margin-bottom: 1em; 
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1em;
 }
-
 @media (max-width: 768px) {
+    /* Reduce overall padding */
     .newsletter-card {
         flex-direction: column-reverse;
+        padding: 0.5em; /* Further reduce padding */
+        width: 100%;
+        height: 100vh; /* Ensure it fits within the screen height */
+        overflow-y: hidden; /* Prevent vertical scrolling */
     }
 
+    /* Ensure image section fits */
     .image-content {
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 10px; /* Reduce margin */
     }
 
-    .newsletter-card {
-        width: 100%;
-        height: 100vh;
+    /* Adjust the text and form section */
+    .text-content {
+        padding-right: 0;
+        text-align: center; /* Center the content */
     }
 
+    .text-content h1 {
+        font-size: 1.8em; /* Reduce font size */
+        margin-bottom: 0.8em;
+    }
+
+    .text-content p {
+        font-size: 1em; /* Reduce paragraph font size */
+        margin-bottom: 0.5em;
+    }
+
+    .text-content ul {
+        padding-left: 0;
+        margin-bottom: 1em; /* Reduce margin */
+    }
+
+    .text-content ul li {
+        margin-bottom: 0.8em;
+        padding-left: 25px; /* Reduce padding-left */
+    }
+
+    /* Adjust form elements */
+    form input {
+        padding: 0.6em;
+        margin-bottom: 0.8em; /* Reduce margin */
+        font-size: 0.9em; /* Reduce input text size */
+        max-width: 100%; /* Ensure inputs take full width */
+    }
+
+    form button {
+        padding: 0.6em; /* Reduce padding */
+        font-size: 0.9em;
+        max-width: 100%; /* Ensure the button fits fully */
+    }
+
+    /* Adjust success container */
     .success-card {
         display: flex;
         flex-direction: column;
-        margin: auto 0%;
+        margin: auto;
         width: 100%;
-        height: 100vh;
-    }
-    .success-icon{
-        padding-top: 40%;
+        height: auto;
     }
 
-    .success h {
-        padding-top: 7%;
+    .success-icon {
+        padding-top: 20%; /* Reduce padding to fit better */
     }
-    
-    p {
-        padding-top: 7%;
+
+    .success-container h1 {
+        padding-top: 3%; /* Adjust padding */
+        font-size: 1.5em; /* Reduce font size */
     }
-    
+
+    .success-container p {
+        padding-top: 3%; /* Adjust padding */
+        font-size: 1em; /* Reduce paragraph font size */
+    }
+
     .success-container button {
-        margin-top: auto; 
+        margin-top: auto;
+        padding: 0.6em; /* Reduce padding */
+        font-size: 0.9em; /* Reduce button font size */
     }
 }
